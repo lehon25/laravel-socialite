@@ -70,6 +70,10 @@
                         </div>
                     </form>
                 </div>
+                <div class="panel-footer">
+                        <a href="{{ url('login/facebook') }}" class="btn btn-social btn-facebook">
+                        Sign Up with Facebook</a>
+                    </div>
             </div>
         </div>
     </div>

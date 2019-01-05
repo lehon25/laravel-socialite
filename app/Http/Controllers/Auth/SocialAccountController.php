@@ -34,7 +34,7 @@ class SocialAccountController extends Controller
             return $account->user;
         } else {
             $user = User::where('email',$socialUser->getEmail())->first();
-            if(! user){
+            if(! $user){
                 $user = User::create([
                     'email'=>$socialUser->getEmail(),
                     'name'=>$socialUser->getName(),
@@ -42,7 +42,7 @@ class SocialAccountController extends Controller
             }
             $user->accounts()->create([
                 'provider_name' => $provider,
-                'provider_id' =>$socialUser->getId(),
+                'provider_id' => $socialUser->getId(),
             ]);
             return $user;
         }
