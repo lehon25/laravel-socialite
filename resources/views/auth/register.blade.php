@@ -73,6 +73,8 @@
                 <div class="panel-footer">
                         <a href="{{ url('login/facebook') }}" class="btn btn-social btn-facebook">
                         Sign Up with Facebook</a>
+                        <a href="{{ url('login/twitter') }}" class="btn btn-social btn-twitter">
+                            Sign Up with Twitter</a>
                     </div>
             </div>
         </div>
